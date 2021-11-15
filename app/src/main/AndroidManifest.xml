@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Test">
         <activity
-            android:name=".MainActivity2"
+            android:name=".About"
             android:exported="false"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/Theme.Test.NoActionBar" />
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
