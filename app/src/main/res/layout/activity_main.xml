@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     android:id="@+id/activitvy_main"
     >
+
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_animals"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/rv_animals"
-        tools:listitem="@layout/item_cardview_animal"/>
+        tools:listitem="@layout/item_cardview_animal" />
 
 
 

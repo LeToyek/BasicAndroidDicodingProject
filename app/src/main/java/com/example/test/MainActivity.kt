@@ -16,20 +16,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private var list:ArrayList<Animals> = arrayListOf()
     private lateinit var rvAnimals : RecyclerView
     private lateinit var koala : CardView
-    private fun showRecyclerCardView(){
-        rvAnimals.layoutManager = LinearLayoutManager(this)
-        val cardViewAnimalAdapter = CardViewAnimalAdapter(list)
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         supportActionBar?.title = "GOLBOG"
-        koala = findViewById(R.id.card_koala)
-
-        koala.setOnClickListener(this)
         rvAnimals = findViewById(R.id.rv_animals)
+        rvAnimals.setHasFixedSize(true)
+
+        list.addAll(AnimalsData.listData)
+        showRecyclerCardView()
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -44,11 +41,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         return super.onCreateOptionsMenu(menu)
     }
 
-    override fun onClick(v: View?) {
-        when(v?.id){
-            R.id.card_koala->{
-                startActivity(Intent(this,DetailActivity::class.java))
-            }
-        }
+    private fun showRecyclerCardView(){
+        rvAnimals.layoutManager = LinearLayoutManager(this)
+        val listAnimalsAdapater = ListAnimalsAdapater(list)
+        rvAnimals.adapter = listAnimalsAdapater
     }
+
+    override fun onClick(v: View?) {
+        TODO("Not yet implemented")
+    }
+
 }

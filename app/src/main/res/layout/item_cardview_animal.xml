@@ -29,6 +29,7 @@
                     android:layout_height="100dp"
                     android:src="@drawable/koala"
                     android:layout_marginRight="20dp"
+                    android:id="@+id/imageKewan"
                     />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -40,8 +41,10 @@
                         android:text="Koala"
                         android:textSize="24sp"
                         android:textStyle="bold"
-                        android:layout_marginBottom="8dp"/>
+                        android:layout_marginBottom="8dp"
+                        android:id="@+id/tvNama"/>
                     <TextView
+                        android:id="@+id/tvDetail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Koala(Phascolarctos cinereus) merupakan binatang berkantung (marsupial) khas dari Australia"/>
