@@ -42,7 +42,8 @@
                         android:textSize="24sp"
                         android:textStyle="bold"
                         android:layout_marginBottom="8dp"
-                        android:id="@+id/tvNama"/>
+                        android:id="@+id/tvNama"
+                        android:layout_marginTop="-8dp"/>
                     <TextView
                         android:id="@+id/tvDetail"
                         android:layout_width="match_parent"

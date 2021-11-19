@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.RecyclerView
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private var list:ArrayList<Animals> = arrayListOf()
     private lateinit var rvAnimals : RecyclerView
-    private lateinit var koala : CardView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
