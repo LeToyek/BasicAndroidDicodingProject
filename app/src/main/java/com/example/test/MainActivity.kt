@@ -43,12 +43,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun showRecyclerCardView(){
         rvAnimals.layoutManager = LinearLayoutManager(this)
-        val listAnimalsAdapater = ListAnimalsAdapater(list)
+        val listAnimalsAdapater = ListAnimalsAdapater(list,this)
         rvAnimals.adapter = listAnimalsAdapater
+
+
     }
 
     override fun onClick(v: View?) {
         TODO("Not yet implemented")
     }
+
 
 }

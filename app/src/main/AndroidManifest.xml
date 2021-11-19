@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Test">
         <activity
+            android:name=".Detail"
+            android:exported="false" />
+        <activity
             android:name=".About"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".DetailActivity"
             android:exported="false"
