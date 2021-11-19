@@ -43,8 +43,15 @@ private val context: Context) : RecyclerView.Adapter<ListAnimalsAdapater.ListVie
         holder.tvDetail.text = animal.detail
         holder.cardAnimal.setOnClickListener{
             var i = Intent(context,DetailActivity::class.java)
-            i.putExtra("Nama",listAnimal[position].name)
-            i.putExtra("About",listAnimal[position].about)
+            i.putExtra("Nama",animal.name)
+            i.putExtra("About",animal.about)
+            i.putExtra("Nama Ilmiah",animal.ilmiah)
+            i.putExtra("makanan", animal.makanan)
+            i.putExtra("habitat",animal.habitat)
+            i.putExtra("usia",animal.usia)
+            i.putExtra("main image", animal.mainPhoto)
+            i.putExtra("image1",animal.photo1)
+            i.putExtra("image2",animal.photo2)
             context.startActivity(i)
         }
         holder.itemView.setOnClickListener { onItemClickCallback.onItemClicked(listAnimal[holder.adapterPosition]) }

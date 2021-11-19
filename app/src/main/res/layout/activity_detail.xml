@@ -20,8 +20,9 @@
             <ImageView
                 android:src="@drawable/koalat"
                 android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"/>
+                android:layout_height="250dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/main_image"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -58,7 +59,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="eucalyptus"
-                    android:layout_marginBottom="16dp"/>
+                    android:layout_marginBottom="8dp"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -98,6 +99,7 @@
                 app:cardCornerRadius="16dp"
                 android:layout_marginRight="16dp">
                 <ImageView
+                    android:id="@+id/photo1"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/koala1"/>
@@ -108,6 +110,7 @@
                 app:cardCornerRadius="16dp"
                 android:layout_marginRight="16dp">
                 <ImageView
+                    android:id="@+id/photo2"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
                     android:src="@drawable/koala2"/>
@@ -118,6 +121,7 @@
                 app:cardCornerRadius="16dp"
                 android:layout_marginRight="16dp">
                 <ImageView
+                    android:id="@+id/photo3"
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
                     android:src="@drawable/koalat"/>
